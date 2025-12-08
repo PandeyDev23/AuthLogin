@@ -69,25 +69,3 @@ Inspired by WhatsApp/Instagram UIs
 ```
 
 ⭐ **Star if helpful!** ⭐
-
-Sources
-[1] otp-authentication https://github.com/topics/otp-authentication
-[2] sauravhathi/otp-service https://github.com/sauravhathi/otp-service
-[3] KankareDEV/OTP-Authentication https://github.com/KankareDEV/OTP-Authentication
-[4] TheGorgeousOtp/README.md at master https://github.com/huextrat/TheGorgeousOtp/blob/master/README.md
-[5] ejhayes/passport-otp https://github.com/ejhayes/passport-otp
-[6] I made a graphical README that works in both light and dark mode! https://www.reddit.com/r/github/comments/ky6e7t/i_made_a_graphical_readme_that_works_in_both/
-[7] In the README file for my portfolio projects, should I display code blocks from my project and explain in-depth what each function does? https://www.reddit.com/r/cscareerquestions/comments/q22p37/in_the_readme_file_for_my_portfolio_projects/
-[8] Phone number authentication + OTP login page built with ... https://github.com/huextrat/TheGorgeousOtp
-[9] Changing README.md image display conditional to GitHub light ... https://stackoverflow.com/questions/65413712/changing-readme-md-image-display-conditional-to-github-light-mode-dark-mode
-[10] How to create a good README.md file https://dev.to/yuridevat/how-to-create-a-good-readmemd-file-4pa2
-[11] Build software better, together https://github.com/topics/otp
-[12] How to make your images in Markdown on GitHub adjust for dark ... https://github.blog/developer-skills/github/how-to-make-your-images-in-markdown-on-github-adjust-for-dark-mode-and-light-mode/
-[13] www.freecodecamp.org › news › how-to-write-a-good-readme-file https://www.freecodecamp.org/news/how-to-write-a-good-readme-file/
-[14] otpauth · GitHub Topics https://github.com/topics/otpauth
-[15] GitHub Readme: Responsive? Animated? Light and dark modes ... https://dev.to/grahamthedev/take-your-github-readme-to-the-next-level-responsive-and-light-and-dark-modes--3kpc
-[16] How to write a good README for your GitHub project? - Bulldogjob https://bulldogjob.com/readme/how-to-write-a-good-readme-for-your-github-project
-[17] DeveloppeurPascal/OTP-Authentication-Basics https://github.com/DeveloppeurPascal/OTP-Authentication-Basics
-[18] awesome-dark-themes/README.md at master · JJGO/awesome-dark-themes https://github.com/JJGO/awesome-dark-themes/blob/master/README.md
-[19] Best Practices For An Eye Catching GitHub Readme https://www.hatica.io/blog/best-practices-for-github-readme/
-[20] free-otp-service https://github.com/topics/free-otp-service
