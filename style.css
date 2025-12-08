@@ -1,4 +1,4 @@
-*{
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -99,8 +99,7 @@ body {
   color: #050505;
   font-size: 15px;
   cursor: pointer;
-  transition: background 0.15s ease, transform 0.1s ease,
-    box-shadow 0.15s ease;
+  transition: background 0.15s ease, transform 0.1s ease, box-shadow 0.15s ease;
 }
 
 .primary-btn:hover {
@@ -297,49 +296,106 @@ body {
   font-size: 15px;
 }
 
-
-.otp-generated{
-    font-size: 13px;
-    /* text-align: center; */
-    /* margin: 6px 0; */
-    color: #b8b8b8;
+.otp-generated {
+  font-size: 13px;
+  /* text-align: center; */
+  /* margin: 6px 0; */
+  color: #b8b8b8;
 }
-
 
 .resend-btn {
   /* Layout - full width, centered text like your design */
   width: 100%;
   padding: 12px 0;
   margin-top: 8px;
-  
+
   /* Dark mode base styling */
   background: transparent;
   border: none;
-  color: #A1A1AA; /* Gray text like "Resend OTP in" */
-  
+  color: #a1a1aa; /* Gray text like "Resend OTP in" */
+
   /* Typography */
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   font-size: 15px;
   font-weight: 500;
   text-align: center;
-  
+
   /* Interactive */
   cursor: pointer;
   transition: color 0.2s ease;
 }
 
 .resend-btn:hover {
-  color: #4ADE80; /* Mint green on hover */
+  color: #4ade80; /* Mint green on hover */
 }
 
 .resend-btn:active {
-  color: #22C55E; /* Slightly darker green when clicked */
+  color: #22c55e; /* Slightly darker green when clicked */
 }
-
 
 .error-message {
   color: #ff4d4de2;
   font-size: 13px;
   margin-bottom: 8px;
   display: none;
+}
+
+/* Container */
+.signing-block {
+  opacity: 0;
+  transform: translateY(8px);
+  animation: signingFadeIn 0.45s ease-out forwards;
+  margin-top: 18px;
+  display: none;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 14px;
+  border-radius: 999px;
+  background: #050505; /* same dark background */
+  border: 1px solid #1f1f1f; /* subtle border like your inputs */
+}
+
+@keyframes signingFadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* Animated dot */
+.signing-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 999px;
+  background: #22c55e; /* mint/green accent */
+  box-shadow: 0 0 8px rgba(34, 197, 94, 0.8);
+  animation: pulse 1s infinite ease-in-out;
+}
+
+/* Text */
+.signing-text {
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", system-ui,
+    sans-serif;
+  font-size: 14px;
+  color: #e5e5e5; /* near‑white text */
+  letter-spacing: 0.01em;
+}
+
+/* Pulse animation */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.35);
+    opacity: 0.7;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
 }

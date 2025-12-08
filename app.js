@@ -10,6 +10,8 @@ const otpTimer = document.getElementById("otpTimer");
 const otpInputsWrapper = document.getElementById("otpInputs");
 const otpGeneratedDisplay = document.querySelector(".otp-generated");
 const errorMsg = document.querySelector(".error-message");
+const signingBlock = document.querySelector(".signing-block");
+const signingText = document.querySelector(".signing-text");
 
 let generatedOTP = "";
 let countdownInterval = null;
@@ -43,6 +45,8 @@ function startTimer(durationSeconds) {
       let newOtp = "";
       // Add click event listener
       resendBtn.addEventListener("click", function () {
+        signingText.textContent = "Authenticating...";
+
         console.log("Resending OTP...");
         newOtp = createOTP();
         generatedOTP = newOtp;
@@ -98,6 +102,8 @@ phoneForm.addEventListener("submit", (e) => {
   otpPhone.textContent = phone;
   otpSection.style.display = "block";
   phoneForm.style.display = "none";
+  signingBlock.style.display = "inline-flex";
+  signingText.textContent = "Authenticating...";
 
   clearOtpState();
   otpInputs.forEach((inp) => (inp.value = ""));
@@ -164,6 +170,7 @@ function showOtpResult(isCorrect) {
     });
     otpMessage.textContent = "OTP verified successfully";
     otpMessage.classList.add("otp-message--success");
+    signingText.textContent = "Signing in ...";
   } else {
     otpInputs.forEach((inp) => {
       inp.classList.remove("otp-input--success");
