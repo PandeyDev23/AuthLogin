@@ -8,6 +8,7 @@ const otpMessage = document.getElementById("otpMessage");
 const verifyBtn = document.getElementById("verifyBtn");
 const otpTimer = document.getElementById("otpTimer");
 const otpInputsWrapper = document.getElementById("otpInputs");
+const otpGeneratedDisplay = document.querySelector(".otp-generated");
 
 let generatedOTP = "";
 let countdownInterval = null;
@@ -54,7 +55,7 @@ phoneForm.addEventListener("submit", (e) => {
 
   generatedOTP = createOTP();
   console.log("Fake OTP:", generatedOTP); // just for dev
-
+  otpGeneratedDisplay.textContent = generatedOTP;
   otpPhone.textContent = phone;
   otpSection.style.display = "block";
   phoneForm.style.display = "none";
@@ -141,5 +142,4 @@ function showOtpResult(isCorrect) {
     }, 600);
   }
 }
-
 verifyBtn.addEventListener("click", verifyOtp);

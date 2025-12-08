@@ -1,6 +1,4 @@
-*,
-*::before,
-*::after {
+*{
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -287,4 +285,12 @@ body {
   align-items: center;
   font-weight: 600;
   font-size: 15px;
+}
+
+
+.otp-generated{
+    font-size: 13px;
+    text-align: center;
+    margin: 6px 0;
+    color: #b8b8b8;
 }
