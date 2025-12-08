@@ -125,7 +125,10 @@ body {
   text-align: center;
 }
 
-.otp-sub {
+.otp-sub {display: flex;
+  justify-content: center;
+  gap: 2px;
+  font-weight: 300;
   font-size: 13px;
   color: #cccccc;
   text-align: center;
@@ -290,7 +293,7 @@ body {
 
 .otp-generated{
     font-size: 13px;
-    text-align: center;
-    margin: 6px 0;
+    /* text-align: center; */
+    /* margin: 6px 0; */
     color: #b8b8b8;
 }

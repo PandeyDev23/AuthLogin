@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sign In - OTP</title>
-    <link rel="shortcut icon" href="/Images/auth.png" type="image/x-icon">
+    <link rel="shortcut icon" href="/Images/auth.png" type="image/x-icon" />
     <link
       href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css"
       rel="stylesheet"
@@ -36,10 +36,10 @@
       <!-- STEP 2: OTP VERIFICATION -->
       <div class="otp-section" id="otpSection">
         <h2 class="otp-title">OTP Verification</h2>
-        <p class="otp-sub">
-          Enter the OTP sent to <span id="otpPhone"></span>
+        <h6 class="otp-sub">
+          Enter the OTP <p class="otp-generated"></p>  sent to <span id="otpPhone"></span>
           <button class="link-btn" id="editPhoneBtn" type="button">Edit</button>
-        </p>
+        </h6>
 
         <div class="otp-inputs" id="otpInputs">
           <input type="text" maxlength="1" class="otp-input" />
@@ -49,8 +49,6 @@
         </div>
 
         <p class="otp-message" id="otpMessage"></p>
-        <p class="otp-generated"></p>
-
         <p class="otp-resend">Resend OTP in <span id="otpTimer">0:30</span></p>
 
         <button class="primary-btn" id="verifyBtn" type="button">
