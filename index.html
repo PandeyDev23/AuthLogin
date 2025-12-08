@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Sign In - OTP</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="auth">
+    <h1 class="auth__title">Sign In</h1>
+
+    <div class="tabs">
+      <button class="tab tab--active">Phone</button>
+      <button class="tab">Email</button>
+    </div>
+
+    <!-- STEP 1: PHONE INPUT -->
+    <form class="phone-form" id="phoneForm">
+      <label class="field-label" for="phoneInput">Mobile Number *</label>
+      <input
+        id="phoneInput"
+        class="text-input"
+        type="tel"
+        placeholder="Enter Your Mobile Number"
+        required
+      />
+      <button type="submit" class="primary-btn">Send OTP</button>
+    </form>
+
+    <!-- STEP 2: OTP VERIFICATION -->
+    <div class="otp-section" id="otpSection">
+      <h2 class="otp-title">OTP Verification</h2>
+      <p class="otp-sub">
+        Enter the OTP sent to <span id="otpPhone"></span>
+        <button class="link-btn" id="editPhoneBtn" type="button">Edit</button>
+      </p>
+
+      <div class="otp-inputs" id="otpInputs">
+        <input type="text" maxlength="1" class="otp-input" />
+        <input type="text" maxlength="1" class="otp-input" />
+        <input type="text" maxlength="1" class="otp-input" />
+        <input type="text" maxlength="1" class="otp-input" />
+      </div>
+
+      <p class="otp-message" id="otpMessage"></p>
+
+      <p class="otp-resend">
+        Resend OTP in <span id="otpTimer">0:30</span>
+      </p>
+
+      <button class="primary-btn" id="verifyBtn" type="button">
+        Verify OTP
+      </button>
+    </div>
+
+    <div class="divider">
+      <span class="divider__line"></span>
+      <span class="divider__text">Or</span>
+      <span class="divider__line"></span>
+    </div>
+
+    <button class="oauth-btn">
+      <span class="oauth-icon">G</span>
+      <span>Continue with Google</span>
+    </button>
+
+    <button class="oauth-btn">
+      <span class="oauth-icon">+</span>
+      <span>Create a New Account</span>
+    </button>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
