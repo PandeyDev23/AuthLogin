@@ -29,7 +29,34 @@ function startTimer(durationSeconds) {
     const s = remaining % 60;
     otpTimer.textContent = `${m}:${String(s).padStart(2, "0")}`;
     remaining -= 1;
-    if (remaining < 0) clearInterval(countdownInterval);
+    if (remaining < 0) {
+      clearInterval(countdownInterval);
+      // Create the resend OTP button
+      const resendBtn = document.createElement("button");
+      resendBtn.textContent = "Resend OTP";
+      resendBtn.className = "resend-btn";
+      resendBtn.id = "resendOtpBtn";
+
+      // Optional: Add disabled state initially (common pattern)
+      resendBtn.disabled = false;
+      let newOtp = "";
+      // Add click event listener
+      resendBtn.addEventListener("click", function () {
+        console.log("Resending OTP...");
+        newOtp = createOTP();
+        generatedOTP = newOtp;
+        otpGeneratedDisplay.textContent = newOtp;
+        console.log("New Fake OTP:", newOtp);
+      });
+
+      if(newOtp !== ""){
+        resendBtn.disabled = true;
+      }
+
+      // Append to parent element (replace with your container)
+      document.querySelector(".otp-resend").innerHTML = "";
+      document.querySelector(".otp-resend").appendChild(resendBtn);
+    }
   }, 1000);
 }
 

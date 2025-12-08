@@ -127,7 +127,7 @@ body {
 
 .otp-sub {display: flex;
   justify-content: center;
-  gap: 2px;
+  gap: 4px;
   font-weight: 300;
   font-size: 13px;
   color: #cccccc;
@@ -256,6 +256,10 @@ body {
 }
 
 .oauth-btn {
+  /* text-align: center; */
+  /* position: relative; */
+  /* left: 50%; */
+  /* transform: translateX(-50%); */
   width: 100%;
   margin-bottom: 12px;
   padding: 12px 18px;
@@ -266,6 +270,7 @@ body {
   font-size: 15px;
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 10px;
   cursor: pointer;
   transition: background 0.15s ease, border-color 0.15s ease,
@@ -281,8 +286,8 @@ body {
   width: 22px;
   height: 22px;
   border-radius: 999px;
-  background: #ffffff;
-  color: #000000;
+  /* background: #ffffff; */
+  color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
