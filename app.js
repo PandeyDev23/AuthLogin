@@ -47,6 +47,8 @@ function startTimer(durationSeconds) {
         generatedOTP = newOtp;
         otpGeneratedDisplay.textContent = newOtp;
         console.log("New Fake OTP:", newOtp);
+        resendBtn.disabled = true;
+        startTimer(10)
       });
 
       if(newOtp !== ""){

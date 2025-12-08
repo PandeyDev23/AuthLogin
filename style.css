@@ -302,3 +302,34 @@ body {
     /* margin: 6px 0; */
     color: #b8b8b8;
 }
+
+
+.resend-btn {
+  /* Layout - full width, centered text like your design */
+  width: 100%;
+  padding: 12px 0;
+  margin-top: 8px;
+  
+  /* Dark mode base styling */
+  background: transparent;
+  border: none;
+  color: #A1A1AA; /* Gray text like "Resend OTP in" */
+  
+  /* Typography */
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  text-align: center;
+  
+  /* Interactive */
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.resend-btn:hover {
+  color: #4ADE80; /* Mint green on hover */
+}
+
+.resend-btn:active {
+  color: #22C55E; /* Slightly darker green when clicked */
+}
