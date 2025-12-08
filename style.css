@@ -125,8 +125,10 @@ body {
   text-align: center;
 }
 
-.otp-sub {display: flex;
+.otp-sub {
+  display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 4px;
   font-weight: 300;
   font-size: 13px;
@@ -332,4 +334,12 @@ body {
 
 .resend-btn:active {
   color: #22C55E; /* Slightly darker green when clicked */
+}
+
+
+.error-message {
+  color: #ff4d4de2;
+  font-size: 13px;
+  margin-bottom: 8px;
+  display: none;
 }

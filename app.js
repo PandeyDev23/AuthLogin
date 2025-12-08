@@ -9,6 +9,7 @@ const verifyBtn = document.getElementById("verifyBtn");
 const otpTimer = document.getElementById("otpTimer");
 const otpInputsWrapper = document.getElementById("otpInputs");
 const otpGeneratedDisplay = document.querySelector(".otp-generated");
+const errorMsg = document.querySelector(".error-message");
 
 let generatedOTP = "";
 let countdownInterval = null;
@@ -48,10 +49,10 @@ function startTimer(durationSeconds) {
         otpGeneratedDisplay.textContent = newOtp;
         console.log("New Fake OTP:", newOtp);
         resendBtn.disabled = true;
-        startTimer(10)
+        startTimer(10);
       });
 
-      if(newOtp !== ""){
+      if (newOtp !== "") {
         resendBtn.disabled = true;
       }
 
@@ -61,7 +62,6 @@ function startTimer(durationSeconds) {
     }
   }, 1000);
 }
-
 // reset visual state of OTP boxes
 function clearOtpState() {
   otpInputs.forEach((inp) => {
@@ -80,7 +80,17 @@ function clearOtpState() {
 phoneForm.addEventListener("submit", (e) => {
   e.preventDefault();
   const phone = phoneInput.value.trim();
-  if (!phone) return;
+  if (!phone || phone.length !== 10 || !/^\d{10}$/.test(phone)) {
+    phoneInput.classList.add("otp-input--error");
+    phoneInput.style.animation = `shake 0.3s`;
+    errorMsg.style.display = "block";
+    errorMsg.style.animation = `shake 0.2s`;
+    setTimeout(() => {
+      phoneInput.classList.remove("otp-input--error");
+      phoneInput.style.animation = `none`;
+    }, 1500);
+    return;
+  }
 
   generatedOTP = createOTP();
   console.log("Fake OTP:", generatedOTP); // just for dev

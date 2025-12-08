@@ -30,6 +30,7 @@
           placeholder="Enter Your Mobile Number"
           required
         />
+        <p class="error-message">Enter a valid 10-digit phone number</p>
         <button type="submit" class="primary-btn">Send OTP</button>
       </form>
 
@@ -37,7 +38,9 @@
       <div class="otp-section" id="otpSection">
         <h2 class="otp-title">OTP Verification</h2>
         <h6 class="otp-sub">
-          Enter the OTP <p class="otp-generated"></p> sent to +91 -<span id="otpPhone"></span>
+          Enter the OTP
+          <p class="otp-generated"></p>
+          sent to +91 -<span id="otpPhone"></span>
           <button class="link-btn" id="editPhoneBtn" type="button">Edit</button>
         </h6>
 
