@@ -126,6 +126,7 @@ editPhoneBtn.addEventListener("click", () => {
   }
   otpSection.style.display = "none";
   phoneForm.style.display = "block";
+  signingBlock.style.display = "none";
   otpResendContainer.innerHTML = "";
   phoneInput.focus();
 });
