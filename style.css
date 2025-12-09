@@ -25,7 +25,6 @@ body {
   margin-bottom: 20px;
 }
 
-/* Tabs */
 
 .tabs {
   display: flex;
@@ -173,7 +172,6 @@ body {
 }
 
 /* success / error states for all boxes */
-
 .otp-input--error {
   border-color: #ff4d4d;
   background: #2a1313;
@@ -184,7 +182,6 @@ body {
   background: #0f221c;
 }
 
-/* small shake animation when wrong */
 
 @keyframes shake {
   0%,
@@ -206,13 +203,11 @@ body {
   animation: shake 0.22s;
 }
 
-/* sequential checking highlight */
 
 .otp-input--checking {
   box-shadow: 0 0 0 1px #2fd39a55;
 }
 
-/* message + timer */
 
 .otp-message {
   min-height: 18px;
@@ -236,7 +231,6 @@ body {
   color: #b8b8b8;
 }
 
-/* Divider + OAuth */
 
 .divider {
   display: flex;
@@ -257,10 +251,6 @@ body {
 }
 
 .oauth-btn {
-  /* text-align: center; */
-  /* position: relative; */
-  /* left: 50%; */
-  /* transform: translateX(-50%); */
   width: 100%;
   margin-bottom: 12px;
   padding: 12px 18px;
@@ -287,7 +277,6 @@ body {
   width: 22px;
   height: 22px;
   border-radius: 999px;
-  /* background: #ffffff; */
   color: #fff;
   display: flex;
   justify-content: center;
@@ -298,39 +287,32 @@ body {
 
 .otp-generated {
   font-size: 13px;
-  /* text-align: center; */
-  /* margin: 6px 0; */
   color: #b8b8b8;
 }
 
 .resend-btn {
-  /* Layout - full width, centered text like your design */
-  width: 100%;
   padding: 12px 0;
   margin-top: 8px;
 
-  /* Dark mode base styling */
   background: transparent;
   border: none;
-  color: #a1a1aa; /* Gray text like "Resend OTP in" */
+  color: #a1a1aa; 
 
-  /* Typography */
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   font-size: 15px;
   font-weight: 500;
   text-align: center;
 
-  /* Interactive */
   cursor: pointer;
   transition: color 0.2s ease;
 }
 
 .resend-btn:hover {
-  color: #4ade80; /* Mint green on hover */
+  color: #4ade80; 
 }
 
 .resend-btn:active {
-  color: #22c55e; /* Slightly darker green when clicked */
+  color: #22c55e; 
 }
 
 .error-message {
@@ -340,7 +322,6 @@ body {
   display: none;
 }
 
-/* Container */
 .signing-block {
   opacity: 0;
   transform: translateY(8px);
@@ -351,8 +332,8 @@ body {
   gap: 10px;
   padding: 10px 14px;
   border-radius: 999px;
-  background: #050505; /* same dark background */
-  border: 1px solid #1f1f1f; /* subtle border like your inputs */
+  background: #050505; 
+  border: 1px solid #1f1f1f; 
 }
 
 @keyframes signingFadeIn {
@@ -370,7 +351,7 @@ body {
   width: 8px;
   height: 8px;
   border-radius: 999px;
-  background: #22c55e; /* mint/green accent */
+  background: #22c55e; 
   box-shadow: 0 0 8px rgba(34, 197, 94, 0.8);
   animation: pulse 1s infinite ease-in-out;
 }
@@ -380,11 +361,10 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", system-ui,
     sans-serif;
   font-size: 14px;
-  color: #e5e5e5; /* near‑white text */
+  color: #e5e5e5; 
   letter-spacing: 0.01em;
 }
 
-/* Pulse animation */
 @keyframes pulse {
   0% {
     transform: scale(1);
